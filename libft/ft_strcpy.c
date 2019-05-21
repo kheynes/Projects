@@ -1,18 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kheynes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/21 10:48:09 by kheynes           #+#    #+#             */
-/*   Updated: 2019/05/21 10:54:57 by kheynes          ###   ########.fr       */
+/*   Created: 2019/05/21 10:59:53 by kheynes           #+#    #+#             */
+/*   Updated: 2019/05/21 11:10:28 by kheynes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putchar(char c)
+char	*ft_strcpy(char *dst, const char *src)
 {
-	write(1, &c, 1);
+	int n;
+
+	n = 0;
+	while (src[n])
+	{
+		dst[n] = src[n];
+		n++;
+	}
+	return (dst);
 }
