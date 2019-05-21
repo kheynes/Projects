@@ -16,4 +16,5 @@
 	void 	ft_putstr(char const *s);
 	char	*ft_strcpy(char *dst, const char *src);
 	int	ft_strlen(const char *str);
+	int	ft_strcmp(char *s1, char *s2);
 #endif /* _LIBFT_H_ */
