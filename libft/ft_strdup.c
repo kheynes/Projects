@@ -1,10 +1,22 @@
-#include <stdio.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: kheynes <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/05/22 09:27:40 by kheynes           #+#    #+#             */
+/*   Updated: 2019/05/22 09:30:33 by kheynes          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdlib.h>
+
 char	*ft_strdup(char *src)
 {
-	int i;
-	int l;
-	char *str;
+	int		i;
+	int		l;
+	char	*str;
 
 	l = 0;
 	while (src[l])
@@ -17,13 +29,4 @@ char	*ft_strdup(char *src)
 		i++;
 	}
 	return (str);
-}
-
-int main()
-{
-	char c[5] = "Copy";
-	
-	printf("%s", ft_strdup(c));
-
-	return (0);
 }

@@ -1,25 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kheynes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/21 14:35:20 by kheynes           #+#    #+#             */
-/*   Updated: 2019/05/22 11:59:59 by kheynes          ###   ########.fr       */
+/*   Created: 2019/05/22 10:55:19 by kheynes           #+#    #+#             */
+/*   Updated: 2019/05/22 11:14:44 by kheynes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef _LIBFT_H_
-#define _LIBFT_H_
-	void	ft_putchar(char c);
-	void 	ft_putstr(char const *s);
-	char	*ft_strcpy(char *dst, const char *src);
-	int	ft_strlen(const char *str);
-	int	ft_strcmp(char *s1, char *s2);
-	char	*ft_strdup(char *src);
-	int	ft_isalphar (int c);
-	int	ft_isdigit(int c);
-	int	ft_isascii(int c);
-	int	ft_isprint(int c);
-#endif /* _LIBFT_H_ */
+#include "libft.h"
+#include <stdio.h>
+
+int	ft_isalnum(int c)
+{
+	if (ft_isalpha(c) || ft_isdigit(c))
+		return (0);
+	else
+		return (0);
+}
+
+int main()
+{
+	int i;
+	
+	i = 'a';
+	if (ft_isalnum(i))
+		printf("i is alpha numeric");
+	else
+		printf("i is not alpha numeric");
+	return (0);
+}
