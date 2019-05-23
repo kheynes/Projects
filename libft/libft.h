@@ -26,4 +26,6 @@ int	ft_isprint(int c);
 int	ft_isalnum(int c);
 int	ft_toupper(int c);
 int	ft_tolower(int c);
+int	ft_strncmp(char *s1, char *s2, size_t n);
+char	*ft_strncpy(char *dst, char *src, size_t n);
 #endif
