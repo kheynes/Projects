@@ -6,9 +6,11 @@
 /*   By: kheynes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/24 09:21:16 by kheynes           #+#    #+#             */
-/*   Updated: 2019/05/24 09:21:18 by kheynes          ###   ########.fr       */
+/*   Updated: 2019/05/27 13:05:42 by kheynes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strncpy(char *dst, char *src, size_t n)
 {
