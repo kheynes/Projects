@@ -6,7 +6,7 @@
 /*   By: kheynes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/24 11:18:51 by kheynes           #+#    #+#             */
-/*   Updated: 2019/05/29 15:33:25 by kheynes          ###   ########.fr       */
+/*   Updated: 2019/05/30 16:00:38 by kheynes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ void	*ft_memchr(const void *s, int c, size_t n);
 void	ft_putchar(char c);
 void	ft_putstr(char const *s);
 char	*ft_strcpy(char *dst, const char *src);
-char	*ft_strcat(char *s1, const char *s2);
 int		ft_strlen(const char *str);
 int		ft_strcmp(char *s1, char *s2);
 char	*ft_strdup(char *src);
@@ -38,5 +37,6 @@ int		ft_isalnum(int c);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
 int		ft_strncmp(char *s1, char *s2, size_t n);
-char	*ft_strncpy(char *dst, char *src, size_t n);
+char	*ft_strncpy(char *dst, const char *src, size_t n);
+char	*ft_strcat(char *s1, const char *s2);
 #endif
