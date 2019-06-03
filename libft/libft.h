@@ -6,7 +6,7 @@
 /*   By: kheynes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/24 11:18:51 by kheynes           #+#    #+#             */
-/*   Updated: 2019/05/30 16:00:38 by kheynes          ###   ########.fr       */
+/*   Updated: 2019/06/03 12:43:04 by kheynes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,4 +39,5 @@ int		ft_tolower(int c);
 int		ft_strncmp(char *s1, char *s2, size_t n);
 char	*ft_strncpy(char *dst, const char *src, size_t n);
 char	*ft_strcat(char *s1, const char *s2);
+char	*ft_strncat(char *s1, const char *s2, size_t n);
 #endif
