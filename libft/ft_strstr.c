@@ -1,24 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kheynes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/04 15:04:44 by kheynes           #+#    #+#             */
-/*   Updated: 2019/06/05 08:59:22 by kheynes          ###   ########.fr       */
+/*   Created: 2019/06/05 09:01:41 by kheynes           #+#    #+#             */
+/*   Updated: 2019/06/05 09:52:53 by kheynes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *s, int c)
+char	*ft_strstr(const char *haystack, const char *needle)
 {
-	int i;
+	const char *a;
+	const char *b;
 
-	i = ft_strlen(s) + 1;
-	while (i--)
-		if (*(s + i) == (char)c)
-			return ((char*)s + i);
+	while (*haystack)
+	{
+		a = haystack;
+		b = needle;
+		while (*haystack && *b && *haystack == *b)
+		{
+			haystack++;
+			b++;
+		}
+		if (!*b)
+			return ((char*)a);
+		haystack = a + 1;
+	}
 	return (NULL);
 }

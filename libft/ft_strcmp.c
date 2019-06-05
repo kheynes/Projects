@@ -6,16 +6,16 @@
 /*   By: kheynes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 08:45:54 by kheynes           #+#    #+#             */
-/*   Updated: 2019/05/22 08:46:00 by kheynes          ###   ########.fr       */
+/*   Updated: 2019/06/05 15:07:42 by kheynes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strcmp(char *s1, char *s2)
+int	ft_strcmp(const char *s1, const char *s2)
 {
-	int i;
-
-	i = 0;
-	while (s1[i] == s2[i] && s1[i] != '\0' && s2[i] != '\0')
-		i++;
-	return (s1[i] - s2[i]);
+	while (*s1 && (*s1 == *s2))
+	{
+		s1++;
+		s2++;
+	}
+	return (*(unsigned const char*)s1 - *(unsigned const char*)s2);
 }
