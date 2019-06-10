@@ -1,21 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striter.c                                       :+:      :+:    :+:   */
+/*   ft_strmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kheynes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/06 16:26:59 by kheynes           #+#    #+#             */
-/*   Updated: 2019/06/10 13:54:30 by kheynes          ###   ########.fr       */
+/*   Created: 2019/06/10 14:28:01 by kheynes           #+#    #+#             */
+/*   Updated: 2019/06/10 14:42:15 by kheynes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_striter(char *s, void (*f)(char*))
+char	*ft_strmap(char const *s, char (*f)(char))
 {
-	if (s == NULL || f == NULL)
-		return ;
-	while (s != NULL && *s)
-		f(s++);
+	size_t	i;
+	char	*fresh;
+
+	if (!s || !f)
+		return (NULL);
+	fresh = ft_strnew(ft_strlen(s));
+	i = 0;
+	while (s[i])
+	{
+		fresh[i] = (*f)(s[i]);
+		i++;
+	}
+	return (fresh);
 }
