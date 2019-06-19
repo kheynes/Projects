@@ -6,7 +6,7 @@
 /*   By: kheynes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/10 14:28:01 by kheynes           #+#    #+#             */
-/*   Updated: 2019/06/10 14:42:15 by kheynes          ###   ########.fr       */
+/*   Updated: 2019/06/19 11:21:19 by kheynes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ char	*ft_strmap(char const *s, char (*f)(char))
 	if (!s || !f)
 		return (NULL);
 	fresh = ft_strnew(ft_strlen(s));
+	if (!fresh)
+		return (NULL);
 	i = 0;
 	while (s[i])
 	{

@@ -6,7 +6,7 @@
 /*   By: kheynes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 09:27:40 by kheynes           #+#    #+#             */
-/*   Updated: 2019/06/13 09:01:57 by kheynes          ###   ########.fr       */
+/*   Updated: 2019/06/19 11:11:55 by kheynes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ char	*ft_strdup(char *src)
 	while (src[l])
 		l++;
 	str = (char*)malloc(sizeof(*str) * (l + 1));
+	if (!str)
+		return (NULL);
 	i = 0;
 	while (i < l)
 	{

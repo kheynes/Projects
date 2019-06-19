@@ -6,7 +6,7 @@
 /*   By: kheynes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/24 11:18:51 by kheynes           #+#    #+#             */
-/*   Updated: 2019/06/15 11:50:15 by kheynes          ###   ########.fr       */
+/*   Updated: 2019/06/19 11:36:11 by kheynes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ void			*ft_memchr(const void *s, int c, size_t n);
 void			ft_putchar(char c);
 void			ft_putstr(char const *s);
 char			*ft_strcpy(char *dst, const char *src);
-int				ft_strlen(const char *str);
+size_t			ft_strlen(const char *str);
 int				ft_strcmp(const char *s1, const char *s2);
 char			*ft_strdup(char *src);
 int				ft_isalpha (int c);
