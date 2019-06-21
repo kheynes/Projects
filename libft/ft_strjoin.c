@@ -6,7 +6,7 @@
 /*   By: kheynes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/11 10:45:44 by kheynes           #+#    #+#             */
-/*   Updated: 2019/06/11 11:13:33 by kheynes          ###   ########.fr       */
+/*   Updated: 2019/06/21 11:10:31 by kheynes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,10 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	size_t	i;
 	size_t	j;
 
+	if (!s1 || !s2)
+		return (NULL);
 	fresh = ft_strnew(ft_strlen(s1) + ft_strlen(s2));
-	if (fresh == NULL)
+	if (!fresh)
 		return (NULL);
 	i = 0;
 	j = 0;
