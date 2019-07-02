@@ -6,7 +6,7 @@
 /*   By: kheynes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/24 11:18:51 by kheynes           #+#    #+#             */
-/*   Updated: 2019/06/19 11:36:11 by kheynes          ###   ########.fr       */
+/*   Updated: 2019/07/02 10:17:21 by kheynes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ void			ft_putstr(char const *s);
 char			*ft_strcpy(char *dst, const char *src);
 size_t			ft_strlen(const char *str);
 int				ft_strcmp(const char *s1, const char *s2);
-char			*ft_strdup(char *src);
+char			*ft_strdup(const char *src);
 int				ft_isalpha (int c);
 int				ft_isdigit(int c);
 int				ft_isascii(int c);

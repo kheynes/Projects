@@ -6,13 +6,13 @@
 /*   By: kheynes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 09:27:40 by kheynes           #+#    #+#             */
-/*   Updated: 2019/06/19 11:11:55 by kheynes          ###   ########.fr       */
+/*   Updated: 2019/07/02 10:17:02 by kheynes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-char	*ft_strdup(char *src)
+char	*ft_strdup(const char *src)
 {
 	int		i;
 	int		l;
